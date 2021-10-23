@@ -1,0 +1,8 @@
+@import "../../App.scss";
+
+#display {
+  height: 300px;
+  border: 20px solid $black;
+  width: 250px;
+  background-color: lighten($lightblue, 30%);
+}

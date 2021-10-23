@@ -1,0 +1,42 @@
+@import "../../App.scss";
+
+#pads {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  background-color: $black;
+  button {
+    cursor: pointer;
+    border: 1px splid $lightblue;
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    width: 85px;
+    background-color: $blue;
+    color: $wheat;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px $lightblue;
+    padding: 0;
+    border: none;
+    &:active,
+    &:focus {
+      box-shadow: 1px 1px 2px red;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+#pads {
+  .active-pad {
+    background-color: red !important;
+  }
+}

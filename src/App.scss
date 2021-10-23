@@ -1,0 +1,23 @@
+//global variables
+$blue: #0b4f6c;
+$lightblue: #01baef;
+$wheat: #e8d2ae;
+$taupe: #796465;
+$black: #333;
+
+.App {
+  font-family: "Titillium Web", sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#drum-machine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid $blue;
+  border-radius: 10px;
+}
