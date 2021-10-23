@@ -14,9 +14,40 @@ $black: #333;
   justify-content: center;
 }
 
+.wrapper {
+  background-color: $black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  #change-set {
+    position: relative;
+    align-self: center;
+    margin: 10px;
+    margin-top: 0;
+    background-color: #0b4f6c;
+    color: #e8d2ae;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  #song-set {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 220px;
+    background-color: $lightblue;
+    align-self: center;
+    color: $black;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+}
+
 #drum-machine {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   border: 5px solid $blue;
   border-radius: 10px;
