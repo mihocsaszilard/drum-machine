@@ -1,8 +1,22 @@
 @import "../../App.scss";
 
 #display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   height: 300px;
   border: 20px solid $black;
   width: 250px;
   background-color: lighten($lightblue, 30%);
+}
+
+.now-playing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    margin: 5px 0;
+  }
 }

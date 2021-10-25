@@ -8,6 +8,7 @@ class App extends Component {
   state = {
     toPlay: set1,
     setName: "Push to change Song Pack ",
+    padName: null,
   };
 
   changeSongSet = () => {
@@ -24,13 +25,17 @@ class App extends Component {
     }
   };
 
+  getPadNames = (padData) => {
+    this.setState({ padName: padData });
+  };
+
   render() {
     return (
       <div className="App">
         <div className="wrapper">
           <div id="drum-machine">
-            <Display />
-            <Pads set={this.state.toPlay} />
+            <Display padName={this.state.padName} />
+            <Pads set={this.state.toPlay} getPadNames={this.getPadNames} />
           </div>{" "}
           <div className="wrapper">
             <p id="song-set">{this.state.setName}</p>

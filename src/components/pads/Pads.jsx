@@ -22,8 +22,9 @@ export default class Pads extends React.Component {
       return sound.keyCode === event.keyCode;
     });
     console.log(res.keyTrigger);
-    // console.log(res.url);
+    //console.log(res.id);
     this.togglePlay(res.url);
+    this.props.getPadNames(res.id);
   };
 
   togglePlay = (sound) => {
@@ -52,63 +53,63 @@ export default class Pads extends React.Component {
           tabIndex={0}
           id="Q"
         >
-          Q<audio src={this.handleKeyPress} />
+          Q<audio src="" />
         </button>
         <button
           onKeyDown={this.handleKeyPress}
           className={this.state.isActive ? "active-pad" : null}
           id="W"
         >
-          W<audio src={this.handleKeyPress} />
+          W<audio src="" />
         </button>
         <button
           onKeyDown={this.handleKeyPress}
           className={this.state.isActive ? "active-pad" : null}
           id="E"
         >
-          E<audio src={this.handleKeyPress} />
+          E<audio src="" />
         </button>
         <button
           onKeyDown={this.handleKeyPress}
           className={this.state.isActive ? "active-pad" : null}
           id="A"
         >
-          A<audio src={this.handleKeyPress} />
+          A<audio src="" />
         </button>
         <button
           onKeyDown={this.handleKeyPress}
           className={this.state.isActive ? "active-pad" : null}
           id="S"
         >
-          S<audio src={this.handleKeyPress} />
+          S<audio src="" />
         </button>
         <button
           onKeyDown={this.handleKeyPress}
           className={this.state.isActive ? "active-pad" : null}
           id="D"
         >
-          D<audio src={this.handleKeyPress} />
+          D<audio src="" />
         </button>
         <button
           onKeyDown={this.handleKeyPress}
           className={this.state.isActive ? "active-pad" : null}
           id="Z"
         >
-          Z<audio src={this.handleKeyPress} />
+          Z<audio src="" />
         </button>
         <button
           onKeyDown={this.handleKeyPress}
           className={this.state.isActive ? "active-pad" : null}
           id="X"
         >
-          X<audio src={this.handleKeyPress} />
+          X<audio src="" />
         </button>
         <button
           onKeyDown={this.handleKeyPress}
           className={this.state.isActive ? "active-pad" : null}
           id="C"
         >
-          C<audio src={this.handleKeyPress} />
+          C<audio src="" />
         </button>
       </div>
     );
