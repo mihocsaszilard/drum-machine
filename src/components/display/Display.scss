@@ -3,12 +3,9 @@
 #display {
   display: flex;
   align-items: center;
+  justify-self: center;
   justify-content: center;
   flex-direction: column;
-  height: 300px;
-  border: 20px solid $black;
-  width: 250px;
-  background-color: lighten($lightblue, 30%);
 }
 
 .now-playing {
@@ -16,6 +13,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 300px;
+  border: 20px solid $black;
+  width: 250px;
+  background-color: lighten($lightblue, 30%);
+
   p {
     margin: 5px 0;
   }

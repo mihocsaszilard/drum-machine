@@ -21,10 +21,12 @@ export default class Pads extends React.Component {
     let res = this.props.set.find((sound) => {
       return sound.keyCode === event.keyCode;
     });
-    console.log(res.keyTrigger);
+    //console.log(res.keyTrigger);
     //console.log(res.id);
-    this.togglePlay(res.url);
-    this.props.getPadNames(res.id);
+    if (res !== undefined) {
+      this.togglePlay(res.url);
+      this.props.getPadNames(res.id);
+    }
   };
 
   togglePlay = (sound) => {

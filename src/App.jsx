@@ -27,6 +27,9 @@ class App extends Component {
 
   getPadNames = (padData) => {
     this.setState({ padName: padData });
+    // setTimeout(() => {
+    //   this.setState({ padName: "" });
+    // }, 500);
   };
 
   render() {
